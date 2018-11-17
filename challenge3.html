@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Challenge 3</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
 		function checkForm(){
+			console.log($("#opt-straw").prop("checked"))
+			console.log($("#opt-blue").prop("checked"))
 			if (($("#opt-straw").prop("checked") == true) || ($("#opt-blue").prop("checked") == true)) {
 				return true
 			} else {
